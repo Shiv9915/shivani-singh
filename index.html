@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shivani Singh | Full Stack Developer</title>
+<style>
+:root{--bg:#f7f8fc;--card:#fff;--text:#1b1f2e;--muted:#5b6275;--accent:#5b4bdb;--accent2:#e8e5ff;--border:#e3e5ef;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1220;--card:#181c30;--text:#eceefa;--muted:#9aa1bb;--accent:#8f82ff;--accent2:#25284a;--border:#2a2f4d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1220;--card:#181c30;--text:#eceefa;--muted:#9aa1bb;--accent:#8f82ff;--accent2:#25284a;--border:#2a2f4d;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-decoration:none}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--border);z-index:20}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav .links{display:flex;gap:18px;overflow-x:auto;font-size:14px}
+nav .links a{color:var(--muted);white-space:nowrap}
+nav .links a:hover{color:var(--accent)}
+#theme{background:var(--accent2);border:0;border-radius:8px;padding:6px 10px;cursor:pointer;font-size:16px;margin-left:12px}
+.hero{padding:64px 0 40px;display:grid;gap:20px}
+.avatar{width:132px;height:132px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);box-shadow:0 6px 24px rgba(91,75,219,.25)}
+h1{font-size:clamp(2rem,6vw,3.2rem);margin:0;line-height:1.1}
+.role{color:var(--accent);font-weight:600;font-size:1.1rem;min-height:1.7em}
+.hero p{max-width:620px;color:var(--muted);margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{padding:10px 18px;border-radius:10px;border:1px solid var(--accent);font-weight:600;font-size:15px}
+.btn.p{background:var(--accent);color:#fff}
+section{padding:36px 0}
+h2{font-size:1.5rem;margin:0 0 18px}
+h2::after{content:"";display:block;width:40px;height:3px;background:var(--accent);margin-top:6px;border-radius:2px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:14.5px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.tag{background:var(--accent2);color:var(--accent);border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:600}
+.meta{color:var(--muted);font-size:13.5px}
+.chips button{background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:999px;padding:6px 14px;cursor:pointer;margin:0 6px 8px 0;font-size:14px}
+.chips button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tl{border-left:2px solid var(--border);padding-left:18px;display:grid;gap:18px}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-26px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--border)}
+.reveal{opacity:0;transform:translateY(14px);transition:.5s}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><strong>Shivani</strong>
+<div style="display:flex;align-items:center;min-width:0"><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div><button id="theme" aria-label="Toggle theme">🌓</button></div></div></nav>
+
+<header class="wrap hero">
+<img class="avatar" alt="Shivani Singh" src="profile.jpg">
+<h1>Shivani Singh</h1>
+<div class="role" id="role"></div>
+<p>Aspiring software engineer building full-stack web apps with Python, Django, React.js and the MERN stack, from REST APIs and payments to deployment.</p>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="https://github.com/Shiv9915" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://linkedin.com/in/shivani-singh-861055322" target="_blank" rel="noopener">LinkedIn</a></div>
+</header>
+
+<main class="wrap">
+<section id="about" class="reveal"><h2>About</h2>
+<div class="card"><p style="margin:0">I’m a Computer Science graduate based in Hyderabad, India, with hands-on experience in Python, Django, React.js, Node.js, Express.js and MongoDB. I’ve built RESTful APIs, database-driven apps, payment integrations and file-processing tools, and deployed them to the web. I’ve also completed internships in web and full-stack development.</p></div></section>
+
+<section id="skills" class="reveal"><h2>Technical skills</h2>
+<div class="chips" id="chips"></div>
+<div class="grid" id="skillGrid"></div></section>
+
+<section id="projects" class="reveal"><h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>Full Stack E-Commerce Website (MERN)</h3>
+<div class="tags"><span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">MongoDB</span><span class="tag">Stripe</span><span class="tag">Razorpay</span><span class="tag">Vercel</span></div>
+<ul><li>Product browsing, filtering, sorting, cart and size variants.</li><li>Checkout with address management and Cash on Delivery, Stripe or Razorpay payments.</li><li>Admin dashboard to add, update and delete products.</li><li>RESTful APIs for product, user and order data.</li></ul></div>
+<div class="card"><h3>AI Resume Analyzer</h3>
+<div class="tags"><span class="tag">Python</span><span class="tag">Django REST</span><span class="tag">React.js</span><span class="tag">Tailwind CSS</span><span class="tag">PyMuPDF</span><span class="tag">Render</span><span class="tag">Vercel</span></div>
+<ul><li>Accepts PDF resumes and generates an ATS compatibility score.</li><li>Job-role skill matching with matched and missing skill analysis plus improvement suggestions.</li><li>Drag-and-drop upload, PDF preview, interactive charts and downloadable PDF reports.</li><li>File validation and error handling across React and Django APIs.</li></ul></div>
+</div></section>
+
+<section id="experience" class="reveal"><h2>Experience</h2>
+<div class="tl">
+<div class="card"><h3>Full Stack Developer Intern, Skilledge</h3><div class="meta">Pune · Oct 2022 – May 2023</div>
+<ul><li>Frontend development with HTML, CSS, JavaScript and React.js.</li><li>Backend development with Python and Django.</li><li>Contributed to full-stack project modules.</li></ul></div>
+<div class="card"><h3>Web Development Intern, Future Finders</h3><div class="meta">Chandigarh · Jul 2022 – Aug 2022</div>
+<ul><li>Learned web development fundamentals and application workflows.</li><li>Helped build and test web components in HTML, CSS and JavaScript.</li></ul></div>
+</div></section>
+
+<section id="education" class="reveal"><h2>Education</h2>
+<div class="card"><h3>B.Tech in Computer Science and Engineering</h3><div class="meta">Quest Group of Institutions, Mohali · 2020 – 2024 · CGPA 7.45</div>
+<p class="meta" style="margin:10px 0 0">Languages: English, Hindi, Punjabi</p></div></section>
+
+<section id="contact" class="reveal"><h2>Contact</h2>
+<div class="card"><p style="margin:0 0 6px">Hyderabad, India</p>
+<p style="margin:0 0 6px"><a href="mailto:shiv981544@gmail.com">shiv981544@gmail.com</a></p>
+<p style="margin:0"><a href="tel:+917973250669">7973250669</a></p></div></section>
+</main>
+<footer>© <span id="yr"></span> Shivani Singh</footer>
+
+<script>
+var roles=["Aspiring Software Engineer","Full Stack Developer","Django & React Builder"];
+var el=document.getElementById("role"),ri=0,ci=0,del=false;
+(function type(){var w=roles[ri];ci+=del?-1:1;el.textContent=w.slice(0,ci);var t=del?35:80;
+if(!del&&ci===w.length){del=true;t=1400}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;t=300}setTimeout(type,t)})();
+var skills={"Programming":["Python","JavaScript (ES6+)"],"Frontend":["HTML5","CSS3","React.js","Tailwind CSS","Axios"],"Backend":["Django","Django REST Framework","Node.js","Express.js","REST APIs"],"Databases":["MongoDB","SQLite"],"Tools & Deployment":["Git","GitHub","Vercel","Render"],"Other":["Stripe","Razorpay","PyMuPDF"]};
+var chips=document.getElementById("chips"),grid=document.getElementById("skillGrid");
+function render(f){grid.innerHTML="";Object.keys(skills).forEach(function(k){if(f!=="All"&&f!==k)return;
+var c=document.createElement("div");c.className="card";var h=document.createElement("h3");h.textContent=k;c.appendChild(h);
+var t=document.createElement("div");t.className="tags";skills[k].forEach(function(s){var sp=document.createElement("span");sp.className="tag";sp.textContent=s;t.appendChild(sp)});c.appendChild(t);grid.appendChild(c)});
+Array.prototype.forEach.call(chips.children,function(b){b.classList.toggle("on",b.textContent===f)})}
+["All"].concat(Object.keys(skills)).forEach(function(k){var b=document.createElement("button");b.textContent=k;b.onclick=function(){render(k)};chips.appendChild(b)});
+render("All");
+var root=document.documentElement;
+try{var s=localStorage.getItem("theme");if(s)root.setAttribute("data-theme",s)}catch(e){}
+document.getElementById("theme").onclick=function(){var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+var n=dark?"light":"dark";root.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}};
+document.getElementById("yr").textContent=new Date().getFullYear();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll(".reveal").forEach(function(x){io.observe(x)});
+</script>
+</body>
+</html>
