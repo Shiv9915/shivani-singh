@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>
+      SSD CODE – Shivani Singh | Software Engineer &amp; Full-Stack Developer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Shivani Singh, aspiring software engineer and full-stack web developer."
+    />
+    <meta property="og:title" content="SSD CODE – Shivani Singh" />
+    <meta property="og:description" content="Code. Design. Build. Improve." />
+    <meta name="theme-color" content="#080812" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="cc">
+    <div id="load"><b>SSD CODE</b><i></i></div>
+    <div id="prog"></div>
+    <div id="cur"></div>
+    <div id="ring"></div>
+    <canvas id="bg" aria-hidden="true"></canvas>
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+
+    <nav id="nav" aria-label="Main">
+      <a class="logo" href="#home">SSD <span>CODE</span></a>
+      <div class="links" id="links">
+        <a href="#home">Home</a><a href="#about">About</a
+        ><a href="#skills">Skills</a><a href="#services">Services</a
+        ><a href="#projects">Projects</a><a href="#experience">Experience</a
+        ><a href="#contact">Contact</a>
+      </div>
+      <a class="btn p s mag" id="resume" href="#contact"
+        ><i data-lucide="download"></i>Download Resume</a
+      >
+      <button id="mb" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <span class="pill"><b></b>Available for opportunities</span>
+          <h1 id="h1" aria-label="Building Digital Experiences That Matter.">
+            Building Digital Experiences That Matter.
+          </h1>
+          <p>
+            I’m Shivani Singh, an aspiring software engineer and full-stack developer. I enjoy building useful web applications and turning ideas into clean, responsive digital experiences using Python, Django and React.
+          </p>
+          <div class="role" id="role" aria-live="off"></div>
+          <div class="row">
+            <a class="btn p mag" href="#projects"
+              >Explore My Work<i data-lucide="arrow-up-right"></i
+            ></a>
+            <a class="btn mag" href="#contact">Let’s Connect</a>
+            <a
+              class="ic mag"
+              data-k="github"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+              ><i data-lucide="github"></i
+            ></a>
+            <a
+              class="ic mag"
+              data-k="linkedin"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+              ><i data-lucide="linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="pf" id="pf">
+          <div class="in"><span>SS</span></div>
+          <div class="chip">Python</div>
+          <div class="chip">Django</div>
+          <div class="chip">React</div>
+        </div>
+      </section>
+      <div class="mq" aria-label="Code. Design. Build. Improve.">
+        <div id="mq"></div>
+      </div>
+
+      <section id="about">
+        <div class="two">
+          <div data-r>
+            <h2>Turning Ideas Into Digital Reality.</h2>
+            <p>
+              I’m Shivani Singh, a B.Tech Computer Science graduate with an
+              interest in software development and building practical web
+              applications. I enjoy learning new technologies and applying
+              them to real-world project ideas.
+            </p>
+            <p>
+              <b>What I work with.</b> Python, Django, React, JavaScript,
+              HTML, CSS, MongoDB and MySQL.
+            </p>
+            <p>
+              <b>My approach.</b> I believe in learning by building, writing
+              maintainable code, solving problems step by step and improving
+              with every project.
+            </p>
+          </div>
+          <div class="stats" data-s>
+            <div class="glass stat">
+              <b data-n="3">0</b><small>Featured Projects</small>
+            </div>
+            <div class="glass stat">
+              <b data-n="8">0</b><small>Core Skills</small>
+            </div>
+            <div class="glass stat">
+              <b data-n="2">0</b><small>Focus Areas</small>
+            </div>
+            <div class="glass int">
+              <h3>Technology interests</h3>
+              <div class="tags">
+                <span class="tag">Responsive design</span
+                ><span class="tag">UI/UX</span
+                ><span class="tag">API integration</span
+                ><span class="tag">Creative web experiences</span
+                ><span class="tag">Python</span><span class="tag">Backend Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 data-r>Skills &amp; Technologies</h2>
+        <div class="fl" id="fl" role="group" aria-label="Filter skills"></div>
+        <div class="grid" id="sg" data-s></div>
+      </section>
+
+      <section id="services">
+        <h2 data-r>Services built around your product.</h2>
+        <div class="grid sg" id="sv" data-s></div>
+      </section>
+
+      <section id="projects">
+        <h2 data-r>Featured Projects</h2>
+        <div class="bento" id="pj" data-s></div>
+      </section>
+
+      <section id="experience">
+        <h2 data-r>Experience &amp; Learning</h2>
+        <div class="tl" data-s>
+          <article class="glass">
+            <h3>Internship Experience</h3>
+            <p>
+              Internship details will be added here. Add the organization,
+              role, dates and the work or skills gained to complete this section.
+            </p>
+          </article>
+          <article class="glass">
+            <h3>Project-Based Learning</h3>
+            <p>
+              Building web development projects to strengthen practical skills
+              in Python, Django, React, JavaScript and databases.
+            </p>
+          </article>
+        </div>
+        <h2 data-r style="margin-top:3rem">Education</h2>
+        <div class="tl" data-s>
+          <article class="glass">
+            <h3>Bachelor of Technology – Computer Science &amp; Engineering</h3>
+            <p>Quest Group of Institutions, Mohali · 2020–2024</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="ct">
+          <div data-r>
+            <h2>Have an Idea? Let’s Build Something Amazing.</h2>
+            <div class="row">
+              <a
+                class="ic mag"
+                data-k="github"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener"
+                ><i data-lucide="github"></i></a
+              ><a
+                class="ic mag"
+                data-k="linkedin"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener"
+                ><i data-lucide="linkedin"></i></a
+              ><a
+                class="ic mag"
+                data-k="instagram"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener"
+                ><i data-lucide="instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="glass gb" data-r>
+            <form id="form">
+              <label
+                >Name<input name="name" required autocomplete="name"
+              /></label>
+              <label
+                >Email<input
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+              /></label>
+              <label>Subject<input name="subject" required /></label>
+              <label
+                >Message<textarea name="message" required></textarea>
+              </label>
+              <button class="btn p mag" type="submit">
+                <i data-lucide="send"></i>Send Message
+              </button>
+            </form>
+            <div class="ok" id="ok" role="status">
+              <svg viewBox="0 0 88 88">
+                <circle cx="44" cy="44" r="40" />
+                <path d="M27 45l12 12 22-26" />
+              </svg>
+              <h3>Message ready to send</h3>
+              <p>
+                Your email app opened with everything filled in. Press send
+                there to deliver it.
+              </p>
+              <button class="btn s" id="again" type="button">
+                Write another
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo">SSD <span>CODE</span></div>
+      <p>Designed &amp; Developed with Passion.</p>
+      <p>© 2026 SSD CODE. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.462.0/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
