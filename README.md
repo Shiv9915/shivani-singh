@@ -54,4 +54,4 @@ Then open `index.html` in your browser.
 
 - Email: shiv981544@gmail.com
 - LinkedIn: [shivani-singh-861055322](https://linkedin.com/in/shivani-singh-861055322)
-- GitHub: [Shiv9915](https://github.com/Shiv9915)
+- GitHub: [shivani-singh-dev](https://github.com/shivani-singh-dev)
