@@ -4,7 +4,7 @@ A responsive personal portfolio website built with plain **HTML, CSS and JavaScr
 
 ## Live Demo
 
-[View the portfolio](https://your-live-link-here)
+[View the portfolio](https://shivani-singh.vercel.app/)
 
 ## Features
 
